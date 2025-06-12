@@ -8,7 +8,7 @@ import styles from './styles';
 
 const CoinItem: FC<CoinItemProps> = ({ item }) => (
   <View style={styles.container} testID={`${item.id}`}>
-    <CoinItemDetails title={item.symbol} />
+    <CoinItemDetails title={item.symbol} backgroundColor={item.backgroundColor} />
     <Ui.Text>{formatCurrency(item.priceUsd)}</Ui.Text>
   </View>
 );

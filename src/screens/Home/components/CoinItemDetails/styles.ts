@@ -13,7 +13,6 @@ export default StyleSheet.create({
     aspectRatio: 1,
     borderRadius: theme.border.radius.xl,
     opacity: 0.1,
-    backgroundColor: '#F6543E',
   },
   nameContainer: {
     flex: 1,

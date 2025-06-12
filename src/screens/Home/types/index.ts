@@ -1,15 +1,15 @@
-import { CryptoAsset } from '@interfaces/states/api';
+import { CryptoCoin, ModifiedCryptoCoin } from '@interfaces/states/api';
 
 export interface CoinsListProps {
   testID: string;
 }
 
 export interface CoinItemProps {
-  item: CryptoAsset;
+  item: ModifiedCryptoCoin;
 }
 
 export interface UseCoins {
-  coins: CryptoAsset[];
+  coins: ModifiedCryptoCoin[];
   loading: boolean;
   loadingMore: boolean;
   error: Error | null;
@@ -19,7 +19,8 @@ export interface UseCoins {
 }
 
 export interface CoinItemDetailsProps {
-  title: CryptoAsset['symbol'];
+  title: ModifiedCryptoCoin['symbol'];
+  backgroundColor: ModifiedCryptoCoin['backgroundColor']
 }
 
 export interface FetchErrorProps {

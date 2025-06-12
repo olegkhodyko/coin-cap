@@ -12,6 +12,9 @@
       "@components": ["components/index.ts"],
       "@components/*": ["components/*"],
 
+      "@constants": ["constants/index.ts"],
+      "@constants/*": ["constants/*"],
+
       "@modules": ["modules/index.ts"],
       "@modules/*": ["modules/*"],
 

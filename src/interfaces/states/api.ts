@@ -7,10 +7,10 @@ export interface AssetQueryParams {
 
 export interface CryptoResponse {
   timestamp: number;
-  data: CryptoAsset[];
+  data: CryptoCoin[];
 }
 
-export interface CryptoAsset {
+export interface CryptoCoin {
   id: string;
   rank: string;
   symbol: string;
@@ -24,4 +24,8 @@ export interface CryptoAsset {
   vwap24Hr: string;
   explorer: string;
   tokens: Record<string, string[]>;
+}
+
+export interface ModifiedCryptoCoin extends CryptoCoin {
+  backgroundColor: string;
 }

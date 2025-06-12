@@ -1,5 +1,8 @@
 import { RouteProp } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import {
+  NativeStackNavigationOptions,
+  NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
 
 export type TypedRoute<T extends keyof RootStackParamList> = RouteProp<
   RootStackParamList,
@@ -11,6 +14,10 @@ export type TypedNavigation<T extends keyof RootStackParamList> =
 export type AppNavigationProps = NativeStackNavigationProp<RootStackParamList>;
 
 export type RootStackParamList = {
-  Splash: undefined;
   Home: undefined;
 };
+
+export type RootNavigationScreenOptions = Record<
+  keyof RootStackParamList,
+  NativeStackNavigationOptions
+>;
