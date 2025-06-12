@@ -12,6 +12,9 @@
       "@components": ["components/index.ts"],
       "@components/*": ["components/*"],
 
+      "@modules": ["modules/index.ts"],
+      "@modules/*": ["modules/*"],
+
       "@hooks": ["hooks/index.ts"],
       "@hooks/*": ["hooks/*"],
 

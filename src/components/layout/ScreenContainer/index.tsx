@@ -1,11 +1,8 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 import { Colors } from '@theme';
-import { View, ViewProps, ViewStyle, StyleSheet } from 'react-native';
+import { View, ViewStyle, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
-interface ScreenContainerProps extends PropsWithChildren<ViewProps> {
-  testID: string;
-}
+import { ScreenContainerProps } from '@interfaces/props/layout';
 
 const ScreenContainer: FC<ScreenContainerProps> = ({
   testID,

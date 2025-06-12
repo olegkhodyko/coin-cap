@@ -1,12 +1,9 @@
-import React, { PropsWithChildren } from 'react';
-import { View, ViewProps } from 'react-native';
+import React, { FC } from 'react';
+import { AppContainerProps } from '@interfaces/props/layout';
+import { View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-interface Props extends PropsWithChildren<ViewProps> {
-  isDarkMode: boolean;
-}
-
-const AppContainer = ({ isDarkMode, children }: Props) => {
+const AppContainer: FC<AppContainerProps> = ({ isDarkMode, children }) => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
     flex: 1,
