@@ -1,3 +1,4 @@
+import theme from '@theme';
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -5,8 +6,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
+    paddingHorizontal: theme.spacing.layout.componentSpacing,
+    gap: theme.spacing.gap.lg,
     height: 84,
-    gap: 20,
   },
 });

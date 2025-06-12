@@ -1,5 +1,6 @@
 export default {
   textPrimary: '#17171A',
-  fullBlack: '#000000',
-  fullWhite: '#FFFFFF',
+  backgroundPrimary: '#FFFFFF',
+  success: '#34C759',
+  error: '#FF3B30',
 } as const;

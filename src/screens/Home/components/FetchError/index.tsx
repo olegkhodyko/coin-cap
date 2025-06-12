@@ -3,7 +3,7 @@ import { Ui } from '@components';
 import { FetchErrorProps } from '@screens/Home/types';
 
 const FetchError: FC<FetchErrorProps> = ({ message }) => (
-  <Ui.Text>Error: {message}</Ui.Text>
+  <Ui.Text color="error">Error: {message}</Ui.Text>
 );
 
 export default FetchError;

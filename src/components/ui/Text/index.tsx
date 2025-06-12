@@ -1,18 +1,20 @@
 import React, { FC } from 'react';
+import theme from '@theme';
 import { TextComponentProps } from '@interfaces/props/text';
-import { Colors, Typography } from '@theme';
 import { Text as RNText } from 'react-native';
 
 export const Text: FC<TextComponentProps> = ({
   children,
-  variant = 'medium',
+  variant = 'bodyBold',
   color = 'textPrimary',
   style,
   ...props
 }) => {
   const resolvedStyle = [
-    Typography.TEXT_STYLES[variant],
-    { color: Colors[color] },
+    theme.typography.TextStyles[variant],
+    {
+      color: theme.colors[color],
+    },
     style,
   ];
 

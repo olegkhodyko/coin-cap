@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Colors } from '@theme';
+import theme from '@theme';
 import { View, ViewStyle, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScreenContainerProps } from '@interfaces/props/layout';
@@ -17,7 +17,7 @@ const ScreenContainer: FC<ScreenContainerProps> = ({
     paddingTop: insets.top,
     paddingBottom: insets.bottom,
     paddingHorizontal: Math.max(insets.left, insets.right),
-    backgroundColor: Colors.fullWhite,
+    backgroundColor: theme.colors.backgroundPrimary,
     overflow: 'hidden',
   };
 

@@ -1,25 +1,36 @@
-import { TextStyle } from 'react-native';
+import {
+  FontFamilyProps,
+  FontSizeProps,
+  TextStyleProps,
+} from '@interfaces/props/theme';
 
-const FontSize = {
-  small: 14,
-  medium: 17,
+const FontSize: FontSizeProps = {
+  sm: 14,
+  md: 17,
+  lg: 20,
 } as const;
 
-const FontFamily = {
-  SF_PRO_SEMIBOLD: 'SFProText-Semibold',
+const FontFamily: FontFamilyProps = {
+  regular: 'SFProText-Regular',
+  semibold: 'SFProText-Semibold',
 } as const;
 
-const TEXT_STYLES: Record<keyof typeof FontSize, TextStyle> = {
-  small: {
-    fontSize: FontSize.small,
-    lineHeight: FontSize.small * 1.2,
-    fontFamily: FontFamily.SF_PRO_SEMIBOLD,
+const TextStyles: TextStyleProps = {
+  body: {
+    fontSize: FontSize.md,
+    lineHeight: FontSize.md * 1.4,
+    fontFamily: FontFamily.regular,
   },
-  medium: {
-    fontSize: FontSize.medium,
-    lineHeight: FontSize.medium * 1.4,
-    fontFamily: FontFamily.SF_PRO_SEMIBOLD,
+  bodyBold: {
+    fontSize: FontSize.md,
+    lineHeight: FontSize.md * 1.4,
+    fontFamily: FontFamily.semibold,
   },
-};
+  caption: {
+    fontSize: FontSize.sm,
+    lineHeight: FontSize.sm * 1.2,
+    fontFamily: FontFamily.regular,
+  },
+} as const;
 
-export default { FontSize, FontFamily, TEXT_STYLES };
+export default { FontSize, FontFamily, TextStyles };
