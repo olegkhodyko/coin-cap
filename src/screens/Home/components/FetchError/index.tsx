@@ -1,12 +1,9 @@
 import React, { FC } from 'react';
-import { Text } from 'react-native';
-
-interface FetchErrorProps {
-  message: string;
-}
+import { Ui } from '@components';
+import { FetchErrorProps } from '@screens/Home/types';
 
 const FetchError: FC<FetchErrorProps> = ({ message }) => (
-  <Text>Error: {message}</Text>
+  <Ui.Text>Error: {message}</Ui.Text>
 );
-    
+
 export default FetchError;

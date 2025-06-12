@@ -21,3 +21,7 @@ export interface UseCoins {
 export interface CoinItemDetailsProps {
   title: CryptoAsset['symbol'];
 }
+
+export interface FetchErrorProps {
+  message: string;
+}

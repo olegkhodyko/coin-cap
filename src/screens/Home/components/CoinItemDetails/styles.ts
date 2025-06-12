@@ -18,9 +18,6 @@ export default StyleSheet.create({
     flex: 1,
   },
   name: {
-    fontSize: 17,
-    fontWeight: '600',
-    lineHeight: 24,
     flexShrink: 1,
     flexWrap: 'wrap',
   },

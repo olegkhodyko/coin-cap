@@ -9,9 +9,4 @@ export default StyleSheet.create({
     height: 84,
     gap: 20,
   },
-  text: {
-    fontSize: 17,
-    fontWeight: '600',
-    lineHeight: 24,
-  },
 });

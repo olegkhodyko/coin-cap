@@ -17,7 +17,7 @@ const ScreenContainer: FC<ScreenContainerProps> = ({
     paddingTop: insets.top,
     paddingBottom: insets.bottom,
     paddingHorizontal: Math.max(insets.left, insets.right),
-    backgroundColor: Colors.backgroundPrimary,
+    backgroundColor: Colors.fullWhite,
     overflow: 'hidden',
   };
 
