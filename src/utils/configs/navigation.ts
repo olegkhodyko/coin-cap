@@ -1,5 +1,5 @@
-import {RootStackParamList} from '@interfaces/navigation';
-import {NativeStackNavigationOptions} from '@react-navigation/native-stack';
+import { RootStackParamList } from '@interfaces/navigation';
+import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 const options: Record<keyof RootStackParamList, NativeStackNavigationOptions> =
   {
@@ -12,6 +12,7 @@ const options: Record<keyof RootStackParamList, NativeStackNavigationOptions> =
       headerShown: false,
     },
   } as const;
+
 export default {
   options,
 };

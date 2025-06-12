@@ -31,7 +31,10 @@
       "@utils/*": ["utils/*"],
 
       "@interfaces": ["interfaces/index.ts"],
-      "@interfaces/*": ["interfaces/*"]
+      "@interfaces/*": ["interfaces/*"],
+
+      "@env": ["../env.d.ts"]
     }
-  }
+  },
+  "include": ["src", "env.d.ts"]
 }

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Layout } from '@components';
-import { CoinsList } from '@modules';
+import { CoinsList } from '@screens/Home/modules';
 import { HomeScreenProps } from '@interfaces/props/screens';
 import styles from './styles';
 
