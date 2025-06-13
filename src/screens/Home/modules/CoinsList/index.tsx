@@ -1,5 +1,5 @@
 import React, { FC, useCallback } from 'react';
-import { Dimensions, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { CoinItem, FetchError, FooterLoading } from '@screens/Home/components';
 import { useCoins } from '@screens/Home/hooks';
 import { CoinsListProps } from '@screens/Home/types';
@@ -9,14 +9,14 @@ import { LIST_ITEM_HEIGHT, maxToRenderPerBatch } from '@constants/layout';
 const CoinsList: FC<CoinsListProps> = ({ testID }) => {
   const { coins, loading, loadingMore, error, loadMore, refresh } = useCoins();
 
-  if (error) {
-    return <FetchError message={error.message} />;
-  }
-
   const renderItem = useCallback(
     ({ item }: { item: ModifiedCryptoCoin }) => <CoinItem item={item} />,
     [],
   );
+
+  if (error) {
+    return <FetchError message={error.message} />;
+  }
 
   return (
     <FlatList

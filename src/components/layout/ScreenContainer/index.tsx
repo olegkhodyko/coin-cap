@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import theme from '@theme';
-import { View, ViewStyle, StyleSheet } from 'react-native';
+import { View, ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScreenContainerProps } from '@interfaces/props/layout';
 

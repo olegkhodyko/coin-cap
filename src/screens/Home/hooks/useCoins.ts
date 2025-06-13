@@ -28,7 +28,9 @@ function useCoins(): UseCoins {
   };
 
   const loadMore = useCallback(async () => {
-    if (loadingMore || !hasMore) return;
+    if (loadingMore || !hasMore) {
+      return;
+    }
 
     try {
       setLoadingMore(true);
@@ -36,7 +38,9 @@ function useCoins(): UseCoins {
       const res = await getAssets({ limit: PageSize, offset: nextOffset });
       setCoins(prev => [...prev, ...decorateWithColor(res.data)]);
       setOffset(nextOffset);
-      if (res.data.length < PageSize) setHasMore(false);
+      if (res.data.length < PageSize) {
+        setHasMore(false);
+      }
     } catch (err: any) {
       setError(err);
     } finally {

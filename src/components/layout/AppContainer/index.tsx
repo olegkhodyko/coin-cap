@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { AppContainerProps } from '@interfaces/props/layout';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import styles from './styles';
 
 const AppContainer: FC<AppContainerProps> = ({

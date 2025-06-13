@@ -1,4 +1,4 @@
-import { CryptoCoin, ModifiedCryptoCoin } from '@interfaces/states/api';
+import { ModifiedCryptoCoin } from '@interfaces/states/api';
 
 export interface CoinsListProps {
   testID: string;
@@ -20,7 +20,7 @@ export interface UseCoins {
 
 export interface CoinItemDetailsProps {
   title: ModifiedCryptoCoin['symbol'];
-  backgroundColor: ModifiedCryptoCoin['backgroundColor']
+  backgroundColor: ModifiedCryptoCoin['backgroundColor'];
 }
 
 export interface FetchErrorProps {

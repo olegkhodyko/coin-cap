@@ -1,4 +1,45 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# CoinCap
+
+## Описание
+
+CoinCap — это приложение для отображения списка криптовалют с использованием React Native. Проект структурирован модульно, с разделением на компоненты, экраны, хуки, API и утилиты.
+
+## Структура проекта
+
+- `src/` — основной код приложения
+  - `components/` — переиспользуемые UI-компоненты
+  - `screens/` — экраны приложения
+  - `hooks/` — кастомные хуки
+  - `api/` — взаимодействие с API
+  - `utils/` — вспомогательные функции
+  - `theme/` — настройки темы (цвета, типографика, отступы, бордеры)
+  - `interfaces/` — типы и интерфейсы
+  - `constants/` — константы
+
+## Установка
+
+```bash
+npm install
+```
+
+## Запуск
+
+```bash
+npm start
+```
+
+## Тестирование
+
+```bash
+npm test
+```
+
+## Рекомендации
+
+- Используйте ESLint и Prettier для форматирования кода.
+- Для оптимизации производительности списков используйте `FlatList` с `getItemLayout`, `useCallback` и `React.memo`.
+- Обрабатывайте ошибки API централизованно.
+- Документируйте ключевые решения с помощью ADR (Architecture Decision Records).
 
 # Getting Started
 
@@ -66,7 +107,7 @@ This is one way to run your app — you can also build it directly from Android 
 
 Now that you have successfully run the app, let's make changes!
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
 When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
