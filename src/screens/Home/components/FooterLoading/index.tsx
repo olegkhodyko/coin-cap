@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import styles from './styles';
 
-const FooterLoading = () => (
+const FooterLoading: FC = () => (
   <View style={styles.container}>
     <ActivityIndicator />
   </View>

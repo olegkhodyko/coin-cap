@@ -22,10 +22,7 @@ const ScreenContainer: FC<ScreenContainerProps> = ({
   };
 
   return (
-    <View
-      testID={testID}
-      style={[safeAreaStyle, StyleSheet.flatten(style)]}
-      {...rest}>
+    <View testID={testID} style={[safeAreaStyle, style]} {...rest}>
       {children}
     </View>
   );

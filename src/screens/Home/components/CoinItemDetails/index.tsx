@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import theme from '@theme';
 import { View } from 'react-native';
 import { Ui } from '@components';
 import { CoinItemDetailsProps } from '@screens/Home/types';
@@ -6,7 +7,7 @@ import styles from './styles';
 
 export const CoinItemDetails: FC<CoinItemDetailsProps> = ({
   title,
-  backgroundColor,
+  backgroundColor = theme.colors.lighter,
 }) => (
   <View style={styles.container}>
     <View style={[styles.icon, { backgroundColor }]} />

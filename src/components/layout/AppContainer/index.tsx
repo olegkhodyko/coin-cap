@@ -1,14 +1,16 @@
 import React, { FC } from 'react';
 import { AppContainerProps } from '@interfaces/props/layout';
-import { View } from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { StyleSheet, View } from 'react-native';
+import styles from './styles';
 
-const AppContainer: FC<AppContainerProps> = ({ isDarkMode, children }) => {
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-    flex: 1,
-  };
-  return <View style={backgroundStyle}>{children}</View>;
-};
+const AppContainer: FC<AppContainerProps> = ({
+  children,
+  style,
+  ...rest
+}): React.JSX.Element => (
+  <View style={[styles.container, style]} {...rest}>
+    {children}
+  </View>
+);
 
 export default AppContainer;

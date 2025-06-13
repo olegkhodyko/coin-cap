@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 import theme from '@theme';
 import { TextComponentProps } from '@interfaces/props/text';
-import { Text as RNText } from 'react-native';
+import { Text } from 'react-native';
 
-export const Text: FC<TextComponentProps> = ({
+export const AppText: FC<TextComponentProps> = ({
   children,
   variant = 'bodyBold',
   color = 'textPrimary',
   style,
-  ...props
+  ...rest
 }) => {
   const resolvedStyle = [
     theme.typography.TextStyles[variant],
@@ -19,10 +19,10 @@ export const Text: FC<TextComponentProps> = ({
   ];
 
   return (
-    <RNText style={resolvedStyle} {...props}>
+    <Text style={resolvedStyle} {...rest}>
       {children}
-    </RNText>
+    </Text>
   );
 };
 
-export default Text;
+export default AppText;
